@@ -89,8 +89,6 @@ body {
    scroll-snap-type: y mandatory;
 }
 
-
-
 /* ///// Default Styles ///// */
 
 h1 {
@@ -432,11 +430,31 @@ nav.visible {
    width: 100%;
    height: 100%;
    font-size: 1rem;
+   position: relative;
+}
+.nav__navigation ul li a:hover::after {
+   height: .2rem;
+   background-color: var(--theme);
+   bottom: -25%;
+   left: 50%;
+   transform: translateX(-50%);
+   animation: fillbar 400ms ease forwards;
+   border-radius: 5px;
+}
+
+@keyframes fillbar {
+   0% {
+      width: 0;
+   }
+   100% {
+      width: 2.5rem;
+   }
 }
 
 .nav__navigation ul li a:hover {
    color: var(--theme);
 }
+
 .li-none-desk {
    display: none;
 }
@@ -536,6 +554,7 @@ header img {
 .container--greet {
    width: 60%;
 }
+
 .container--greet p {
    font-size: 3rem;
    font-weight: 800;
@@ -546,7 +565,7 @@ span.yellow {
    color: var(--theme-3);
 }
 
-.container--greet p span{
+.container--greet p span {
    font-weight: 900
 }
 
@@ -572,15 +591,19 @@ span.yellow {
 /* customer section starts here */
 
 .mySlides {
+   height: 70vh;
    display: none;
 }
 
 .mySlides img {
-   vertical-align: middle;
+   /* vertical-align: middle; */
+   height: 100%;
+   object-fit: cover;
 }
 
 /* Slideshow container */
 .slideshow-container {
+   width: 50%;
    max-width: 100%;
    position: relative;
    margin: auto;
@@ -943,6 +966,9 @@ details[open] summary {
    .product img {
       height: 150px;
    }
+   .slideshow-container {
+      width: 100%;
+   }
 }
 
 table {
@@ -1150,7 +1176,7 @@ th {
       color: var(--theme-2);
       background: var(--theme);
    }
-   
+
    .li-none-desk {
       display: block;
    }
@@ -1276,8 +1302,8 @@ th {
    .nav__container {
       width: 90%
    }
-   
-   .container--greet{
+
+   .container--greet {
       width: 95%;
    }
 }
