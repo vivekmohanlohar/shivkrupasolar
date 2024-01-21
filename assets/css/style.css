@@ -18,8 +18,8 @@
 
    --theme: #178CEA;
    --theme-2: #00DD20;
-   --theme-3: #e8540d;
-   --theme-4: #4bb9a8;
+   --theme-3: #E8540D;
+   --theme-4: #4BB9A8;
    --heading-primary: #3c67d3;
    --heading-secodery: #0eedcc;
    --heading-normal: #1bae98;
@@ -561,8 +561,8 @@ header img {
    line-height: 1;
 }
 
-span.yellow {
-   color: var(--theme-3);
+p.yellow {
+   color: #563221;
 }
 
 .container--greet p span {
