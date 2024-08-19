@@ -1,9 +1,9 @@
 /* TEAM */
 Main developer: Vivek Lohar
-Contact: viveklohar453@gmail.com
+Contact: https://vivekmohanlohar.github.io/viveklohar/
 
 /* THANKS */
 Special thanks to om kute for his support.
 
 /* SITE */
-Last update: January 7, 2024
+Last update: August 19, 2024
